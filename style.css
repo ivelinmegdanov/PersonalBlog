@@ -1,0 +1,41 @@
+:root {
+  --gray-dark: #333333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 200px;
+}
+.header__menu {
+  display: flex;
+  gap: 16px;
+}
+.menu__text {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 32px 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    padding: 32px 16px;
+  }
+  .header__logo {
+    width: 96px;
+    height: 38.07px;
+  }
+  .menu__text {
+    display: none;
+  }
+  .header__search {
+    display: none;
+  }
+}
