@@ -10,9 +10,9 @@
   box-sizing: border-box;
 }
 .container {
-  max-width: 1280px;
+  max-width: 1520px;
   width: 100%;
-  padding: 32px 30px;
+  padding: 32px 20px;
   margin: 0 auto;
 }
 .header__logo {
@@ -38,9 +38,6 @@
 }
 
 @media (max-width: 1024px) {
-  .header {
-    padding: 32px 20px;
-  }
 }
 
 @media (max-width: 760px) {
