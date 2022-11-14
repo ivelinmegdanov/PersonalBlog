@@ -1,13 +1,18 @@
 :root {
   --gray-dark: #333333;
+  --font-primary: 'Rubik', sans-serif;
+  --font-secondary: 'Ubuntu', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 32px;
-  box-sizing: border-box;
 }
 .container {
   max-width: 1520px;
@@ -15,20 +20,15 @@
   padding: 32px 20px;
   margin: 0 auto;
 }
-.header__logo {
-  box-sizing: border-box;
-}
 .header__search {
   cursor: pointer;
-  box-sizing: border-box;
 }
 .header__menu {
   display: flex;
   gap: 16px;
-  box-sizing: border-box;
 }
 .menu__text {
-  font-family: "Ubuntu", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 300;
   font-size: 24px;
   color: var(--gray-dark);
@@ -37,8 +37,8 @@
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
-}
+ /*@media (max-width: 1024px) {
+}*/
 
 @media (max-width: 760px) {
   .header {
