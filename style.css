@@ -6,6 +6,8 @@
 
 * {
   box-sizing: border-box;
+}
+html {
   font-family: var(--font-primary);
 }
 .header {
