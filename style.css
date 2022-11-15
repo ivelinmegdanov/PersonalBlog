@@ -1,30 +1,46 @@
 :root {
   --gray-dark: #333333;
+  --font-primary: 'Rubik', sans-serif;
+  --font-secondary: 'Ubuntu', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: var(--font-primary);
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 200px;
+  padding: 32px;
+}
+.container {
+  max-width: 1520px;
+  width: 100%;
+  padding: 32px 20px;
+  margin: 0 auto;
+}
+.header__search {
+  cursor: pointer;
 }
 .header__menu {
+  cursor: pointer;
   display: flex;
   gap: 16px;
 }
 .menu__text {
-  font-family: "Ubuntu", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 300;
   font-size: 24px;
+  color: var(--gray-dark);
 }
 
-@media (max-width: 768px) {
-  .header {
-    padding: 32px 20px;
-  }
-}
+ /*@media (max-width: 1024px) {
+}*/
 
-@media (max-width: 320px) {
+@media (max-width: 760px) {
   .header {
     padding: 32px 16px;
   }
