@@ -1,7 +1,7 @@
 :root {
   --gray-dark: #333333;
-  --font-primary: 'Rubik', sans-serif;
-  --font-secondary: 'Ubuntu', sans-serif;
+  --font-primary: "Rubik", sans-serif;
+  --font-secondary: "Ubuntu", sans-serif;
 }
 
 * {
@@ -73,6 +73,28 @@ html {
 }
 .hero__scroll {
   margin-top: 56px;
+  display: flex;
+  align-items: center;
+}
+.social__items {
+  display: flex;
+  gap: 32px;
+}
+.scroll {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  cursor: pointer;
+}
+.scroll__text {
+  font-size: 18px;
+}
+.scroll__icon {
+  height: 32px;
+}
+.space {
+  width: 100px;
+  height: 65px;
 }
 
  /*@media (max-width: 1024px) {
