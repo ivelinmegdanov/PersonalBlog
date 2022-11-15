@@ -103,13 +103,6 @@ html {
   height: 65px;
 }
 
-.tablet-only {
-  display:none !important;
-}
-.mobile-only {
-  display:none !important;
-}
-
 @media (max-width: 1024px) {
   .hero__content {
     display: block;
@@ -127,17 +120,6 @@ html {
   }
   .space {
     display: none;
-  }
-
-
-  .desktop-only {
-    display:none !important;
-  }
-  .tablet-only {
-    display:block !important;
-  }
-  .mobile-only {
-    display:none !important;
   }
 }
 
@@ -170,15 +152,5 @@ html {
   }
   .hero__desc2 {
     font-size: 18px;
-  }
-
-  .desktop-only {
-    display:none !important;
-  }
-  .tablet-only {
-    display:none !important;
-  }
-  .mobile-only {
-    display:block !important;
   }
 }

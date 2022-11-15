@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
@@ -38,9 +36,11 @@
                 </div>
 
                 <div class="hero__image">
-                    <img class="avatar desktop-only" src="./images/Hero/profile pictures/ProfileDesktop.svg" alt="Profile Picture" />
-                    <img class="avatar tablet-only" src="./images/Hero/profile pictures/ProfileTablet.svg" alt="Profile Picture" />
-                    <img class="avatar mobile-only" src="./images/Hero/profile pictures/ProfileMobile.svg" alt="Profile Picture" />
+                    <picture>
+                        <source srcset="./images/Hero/profilePicture/ProfileDesktop.svg" media="(min-width: 1024px)">
+                        <source srcset="./images/Hero/profilePicture/ProfileTablet.svg" media="(min-width: 760px)">
+                        <img class="avatar" src="./images/Hero/profilePicture/ProfileDesktop.svg" alt="Profile Picture">
+                    </picture>
                 </div>
             </div>
 
