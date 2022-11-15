@@ -9,6 +9,7 @@
 }
 html {
   font-family: var(--font-primary);
+  color: var(--gray-dark);
 }
 .header {
   display: flex;
@@ -34,7 +35,44 @@ html {
   font-family: var(--font-secondary);
   font-weight: 300;
   font-size: 24px;
-  color: var(--gray-dark);
+}
+
+.hero__content {
+  display: flex;
+  gap: 60px;
+}
+.hero__welcome {
+  font-family: var(--font-secondary);
+  font-size: 34px;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 0;
+}
+.hero__welcome::before {
+  content: "";
+  height: 0.5em;
+  width: 48px;
+  border-top: 2px solid var(--gray-dark);
+  margin-right: 12px;
+}
+.hero__title {
+  margin-top: 20px;
+  font-size: 74px;
+  font-weight: 400;
+}
+.bold {
+  font-weight: bold;
+}
+.hero__desc {
+  margin-top: 20px;
+  font-size: 40px;
+}
+.hero__desc2 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+.hero__scroll {
+  margin-top: 56px;
 }
 
  /*@media (max-width: 1024px) {
