@@ -37,6 +37,9 @@ html {
   font-size: 24px;
 }
 
+.hero {
+  margin-top: 20px;
+}
 .hero__content {
   display: flex;
   gap: 60px;
@@ -151,6 +154,9 @@ html {
     display: none;
   }
 
+  .hero {
+    margin-top: 0;
+  }
   .hero__welcome {
     font-size: 24px;
   }
