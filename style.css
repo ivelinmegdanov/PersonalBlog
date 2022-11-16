@@ -44,14 +44,14 @@ html {
   display: flex;
   gap: 60px;
 }
-.hero__welcome {
+.hero__label {
   font-family: var(--font-secondary);
   font-size: 34px;
   display: flex;
   align-items: flex-end;
   margin-top: 0;
 }
-.hero__welcome::before {
+.hero__label::before {
   content: "";
   height: 0.5em;
   width: 48px;
@@ -66,11 +66,11 @@ html {
 .bold {
   font-weight: bold;
 }
-.hero__desc {
+.hero__subtitle {
   margin-top: 20px;
   font-size: 40px;
 }
-.hero__desc2 {
+.hero__text {
   margin-top: 20px;
   font-size: 24px;
 }
@@ -141,16 +141,16 @@ html {
   .hero {
     margin-top: 0;
   }
-  .hero__welcome {
+  .hero__label {
     font-size: 24px;
   }
   .hero__title {
     font-size: 32px;
   }
-  .hero__desc {
+  .hero__subtitle {
     font-size: 18px;
   }
-  .hero__desc2 {
+  .hero__text {
     font-size: 18px;
   }
 }
