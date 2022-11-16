@@ -63,7 +63,7 @@ html {
   font-size: 74px;
   font-weight: 400;
 }
-.bold {
+.hero__title--name {
   font-weight: bold;
 }
 .hero__subtitle {
