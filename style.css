@@ -47,9 +47,9 @@ html {
 .hero__label {
   font-family: var(--font-secondary);
   font-size: 34px;
+  font-weight: 700;
   display: flex;
   align-items: flex-end;
-  margin-top: 0;
 }
 .hero__label::before {
   content: "";
@@ -69,6 +69,7 @@ html {
 .hero__subtitle {
   margin-top: 20px;
   font-size: 40px;
+  font-weight: 400;
 }
 .hero__text {
   margin-top: 20px;
@@ -93,9 +94,9 @@ html {
 .scroll__text {
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 12px;
 }
 .scroll__icon {
+  margin-top: 12px;
   height: 32px;
 }
 .space {
