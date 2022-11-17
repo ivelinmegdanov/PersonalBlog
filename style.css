@@ -113,8 +113,10 @@ html {
   .hero__content {
     display: block;
   }
-  .avatar {
+  .hero__image {
     margin-top: 56px;
+  }
+  .avatar {
     width: 100%;
   }
   .hero__scroll{
