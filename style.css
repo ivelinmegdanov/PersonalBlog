@@ -75,7 +75,7 @@ html {
   font-size: 40px;
   font-weight: 400;
 }
-.hero__text {
+.hero__desc {
   margin-top: 20px;
   font-size: 24px;
 }
@@ -157,7 +157,7 @@ html {
   .hero__subtitle {
     font-size: 18px;
   }
-  .hero__text {
+  .hero__desc {
     font-size: 18px;
   }
 }
