@@ -4,6 +4,7 @@
   --font-secondary: "Ubuntu", sans-serif;
 }
 
+/* GLOBAL */
 * {
   box-sizing: border-box;
 }
@@ -11,6 +12,8 @@ html {
   font-family: var(--font-primary);
   color: var(--gray-dark);
 }
+
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
@@ -37,6 +40,7 @@ html {
   font-size: 24px;
 }
 
+/* HERO SECTION */
 .hero {
   margin-top: 20px;
 }
@@ -104,6 +108,7 @@ html {
   height: 65px;
 }
 
+/* Tablet breakpoint */
 @media (max-width: 1024px) {
   .hero__content {
     display: block;
@@ -124,6 +129,7 @@ html {
   }
 }
 
+/* Mobile breakpoint */
 @media (max-width: 760px) {
   .header {
     padding: 32px 16px;
