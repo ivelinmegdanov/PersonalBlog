@@ -110,6 +110,11 @@ html {
 }
 
 /* ABOUTME SECTION */
+.crate {
+  max-width: 1262px;
+  width: 100%;
+  margin: 0 auto;
+}
 .aboutme {
   display: flex;
   align-items: center;
