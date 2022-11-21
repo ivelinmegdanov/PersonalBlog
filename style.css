@@ -109,6 +109,23 @@ html {
   height: 65px;
 }
 
+/* ABOUTME SECTION */
+.aboutme {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 250px;
+}
+.aboutme__title {
+  font-weight: 400;
+  font-size: 36px;
+}
+.aboutme__video {
+  margin-top: 60px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
 /* Tablet breakpoint */
 @media (max-width: 1024px) {
   .hero__content {
