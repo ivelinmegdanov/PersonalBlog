@@ -42,7 +42,8 @@ html {
 
 /* HERO SECTION */
 .hero {
-  margin-top: 20px;
+  margin-top: 84px;
+  padding-top: 0px;
 }
 .hero__content {
   display: flex;
