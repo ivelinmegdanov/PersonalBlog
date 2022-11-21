@@ -35,11 +35,13 @@
                 <p class="hero__desc">Of course, there’s so much more to me than just a few fancy titles. Scroll down and get to know me,</p>
                 </div>
 
-                <picture class="hero__image">
-                    <source srcset="./images/Hero/profilePicture/ProfileDesktop.svg" media="(min-width: 1024px)">
-                    <source srcset="./images/Hero/profilePicture/ProfileTablet.svg" media="(min-width: 760px)">
-                    <img class="avatar" src="./images/Hero/profilePicture/ProfileDesktop.svg" alt="Profile Picture">
-                </picture>
+                <div class="hero__image">
+                    <picture>
+                        <source srcset="./images/Hero/profilePicture/ProfileDesktop.svg" media="(min-width: 1024px)">
+                        <source srcset="./images/Hero/profilePicture/ProfileTablet.svg" media="(min-width: 760px)">
+                        <img class="avatar" src="./images/Hero/profilePicture/ProfileMobile.svg" alt="Profile Picture">
+                    </picture>
+                </div>
             </div>
 
             <div class="hero__scroll">
@@ -60,9 +62,18 @@
 
         <div class="aboutme">
             <h2 class="aboutme__title">Learn all about me in 60 seconds.</h2>
-            <video class="aboutme__video" poster="./images/Aboutme/VideoPoster.svg" preload="auto" controls>
+            
+            <!-- <video class="aboutme__video" poster="./images/Aboutme/VideoPosterDesktop.svg" preload="auto" controls>
 	            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-            </video>
+            </video> -->
+
+            <div class="aboutme__video">
+                <picture>
+                    <source srcset="./images/Aboutme/VideoPosterDesktop.svg" media="(min-width: 1024px)">
+                    <source srcset="./images/Aboutme/VideoPosterTablet.svg" media="(min-width: 760px)">
+                    <img class="video__poster" src="./images/Aboutme/VideoPosterMobile.svg" alt="Video">
+                </picture>
+            </div>
         </div>
     </div>
 </body>

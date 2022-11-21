@@ -123,11 +123,13 @@ html {
 .aboutme__video {
   margin-top: 60px;
   max-width: 100%;
+  overflow: hidden;
   cursor: pointer;
 }
 
 /* Tablet breakpoint */
 @media (max-width: 1024px) {
+  /* HERO SECTION */
   .hero__content {
     display: block;
   }
@@ -146,6 +148,12 @@ html {
   }
   .space {
     display: none;
+  }
+
+  /* ABOUTME SECTION */
+  .aboutme {
+    margin-top: 170px;
+    padding: 0px 20px;
   }
 }
 
@@ -179,5 +187,13 @@ html {
   }
   .hero__desc {
     font-size: 18px;
+  }
+
+   /* ABOUTME SECTION */
+  .aboutme {
+    margin-top: 150px;
+  }
+  .aboutme__title {
+    font-size: 32px;
   }
 }
