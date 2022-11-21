@@ -1,15 +1,19 @@
 :root {
   --gray-dark: #333333;
-  --font-primary: 'Rubik', sans-serif;
-  --font-secondary: 'Ubuntu', sans-serif;
+  --font-primary: "Rubik", sans-serif;
+  --font-secondary: "Ubuntu", sans-serif;
 }
 
+/* GLOBAL */
 * {
   box-sizing: border-box;
 }
 html {
   font-family: var(--font-primary);
+  color: var(--gray-dark);
 }
+
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
@@ -34,12 +38,101 @@ html {
   font-family: var(--font-secondary);
   font-weight: 300;
   font-size: 24px;
-  color: var(--gray-dark);
 }
 
- /*@media (max-width: 1024px) {
-}*/
+/* HERO SECTION */
+.hero {
+  margin-top: 84px;
+  padding-top: 0px;
+}
+.hero__content {
+  display: flex;
+  gap: 60px;
+}
+.hero__label {
+  font-family: var(--font-secondary);
+  font-size: 34px;
+  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+}
+.hero__label::before {
+  content: "";
+  height: 0.5em;
+  width: 48px;
+  border-top: 2px solid var(--gray-dark);
+  margin-right: 12px;
+}
+.hero__title {
+  margin-top: 20px;
+  font-size: 74px;
+  font-weight: 400;
+}
+.hero__title--name {
+  font-weight: bold;
+}
+.hero__subtitle {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 400;
+}
+.hero__desc {
+  margin-top: 20px;
+  font-size: 24px;
+}
 
+.hero__scroll {
+  margin-top: 56px;
+  display: flex;
+  align-items: center;
+}
+.social__items {
+  display: flex;
+  gap: 32px;
+}
+.scroll {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  cursor: pointer;
+}
+.scroll__text {
+  font-size: 18px;
+  font-weight: 300;
+}
+.scroll__icon {
+  margin-top: 12px;
+  height: 32px;
+}
+.space {
+  width: 100px;
+  height: 65px;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
+  .hero__content {
+    display: block;
+  }
+  .hero__image {
+    margin-top: 56px;
+  }
+  .avatar {
+    width: 100%;
+  }
+  .hero__scroll{
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .scroll {
+    display: none;
+  }
+  .space {
+    display: none;
+  }
+}
+
+/* Mobile breakpoint */
 @media (max-width: 760px) {
   .header {
     padding: 32px 16px;
@@ -53,5 +146,21 @@ html {
   }
   .header__search {
     display: none;
+  }
+
+  .hero {
+    margin-top: 0;
+  }
+  .hero__label {
+    font-size: 24px;
+  }
+  .hero__title {
+    font-size: 32px;
+  }
+  .hero__subtitle {
+    font-size: 18px;
+  }
+  .hero__desc {
+    font-size: 18px;
   }
 }
