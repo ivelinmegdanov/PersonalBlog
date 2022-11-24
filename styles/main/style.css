@@ -1,5 +1,6 @@
 :root {
   --gray-dark: #333333;
+  --gray-light: #D6D6D6;
   --font-primary: "Rubik", sans-serif;
   --font-secondary: "Ubuntu", sans-serif;
 }
@@ -137,6 +138,65 @@ html {
   height:100%;
 }
 
+/* SKILLS SECTION */
+.skills {
+  margin-top: 280px;
+  margin-bottom: 200px;
+}
+.skills__title {
+  font-size: 54px;
+  text-align: center;
+  font-weight: 500;
+}
+.skills__boxes {
+  margin-top: 60px;
+}
+.skill__box {
+  padding: 78px 40px;
+}
+.skill__box__title {
+  font-weight: 400;
+  font-size: 46px;
+}
+.skill__box__desc {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.skill__box__button {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.skill__box__read {
+  font-weight: 600;
+  font-size: 18px;
+}
+.box__dark {
+  color: white;
+  background-color: var(--gray-dark);
+}
+.box__light {
+  background-color: var(--gray-light);
+}
+.skill__boxes__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills__footer {
+  margin-top: 60px;
+  display: flex;
+}
+.filler {
+  width: 65px;
+}
+.arrows {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
 /* Tablet breakpoint */
 @media (max-width: 1024px) {
   /* HERO SECTION */
@@ -167,6 +227,11 @@ html {
   .aboutme {
     margin-top: 200px;
   }
+
+  /* SKILLS SECTION */
+  .skill__box {
+    height: 409px !important;
+}
 }
 
 /* Mobile breakpoint */
