@@ -235,8 +235,12 @@ html {
     margin-top: 200px;
   }
   .skill__box {
-    height: 409px !important;
+    overflow-wrap: break-word;
+    height: 410px !important;
     padding: 116px 40px;
+  }
+  .skills__boxes {
+    height: 1350px;
   }
   .skill__box__button {
     justify-content: flex-start;
