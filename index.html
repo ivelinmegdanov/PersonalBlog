@@ -35,11 +35,13 @@
                 <p class="hero__desc">Of course, there’s so much more to me than just a few fancy titles. Scroll down and get to know me,</p>
                 </div>
 
-                <picture class="hero__image">
-                    <source srcset="./images/Hero/profilePicture/ProfileDesktop.svg" media="(min-width: 1024px)">
-                    <source srcset="./images/Hero/profilePicture/ProfileTablet.svg" media="(min-width: 760px)">
-                    <img class="avatar" src="./images/Hero/profilePicture/ProfileDesktop.svg" alt="Profile Picture">
-                </picture>
+                <div class="hero__image">
+                    <picture>
+                        <source srcset="./images/Hero/profilePicture/ProfileDesktop.svg" media="(min-width: 1024px)">
+                        <source srcset="./images/Hero/profilePicture/ProfileTablet.svg" media="(min-width: 760px)">
+                        <img class="avatar" src="./images/Hero/profilePicture/ProfileMobile.svg" alt="Profile Picture">
+                    </picture>
+                </div>
             </div>
 
             <div class="hero__scroll">
@@ -57,6 +59,19 @@
                 <div class="space"></div>
             </div>
         </div>
+
+        <section class="aboutme crate">
+            <h2 class="aboutme__title">Learn all about me in 60 seconds.</h2>
+
+            <div class="aboutme__video">
+                <picture>
+                    <source srcset="./images/Aboutme/VideoPosterDesktop.svg" media="(min-width: 1024px)">
+                    <source srcset="./images/Aboutme/VideoPosterTablet.svg" media="(min-width: 760px)">
+                    <img class="video__poster" src="./images/Aboutme/VideoPosterMobile.svg" alt="Video">
+                </picture>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
