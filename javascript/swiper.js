@@ -1,4 +1,4 @@
-var swiper = new Swiper(".swiper", {
+let swiper = new Swiper(".swiper", {
   slidesPerView: 3,
   direction: getDirection(),
   spaceBetween: getSpaceBetween(),
@@ -18,15 +18,13 @@ var swiper = new Swiper(".swiper", {
 });
 
 function getDirection() {
-  var windowWidth = window.innerWidth;
-  var direction = window.innerWidth <= 1023 ? "vertical" : "horizontal";
+  let direction = window.innerWidth <= 1023 ? "vertical" : "horizontal";
 
   return direction;
 }
 
 function getSpaceBetween() {
-  var windowWidth = window.innerWidth;
-  var spacebetween = window.innerWidth <= 1023 ? 32 : 60;
+  let spacebetween = window.innerWidth <= 1023 ? 32 : 60;
 
   return spacebetween;
 }
