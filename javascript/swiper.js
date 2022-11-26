@@ -1,7 +1,7 @@
 let swiper = new Swiper(".swiper", {
   slidesPerView: 3,
   direction: getDirection(),
-  spaceBetween: getSpaceBetween(),
+  spaceBetween: 32,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -9,6 +9,11 @@ let swiper = new Swiper(".swiper", {
   pagination: {
     el: ".skill__boxes__pagination",
     clickable: true,
+  },
+  breakpoints: {
+    1024: {
+      spaceBetween: 60,
+    },
   },
   on: {
     resize: function () {
@@ -18,13 +23,7 @@ let swiper = new Swiper(".swiper", {
 });
 
 function getDirection() {
-  let direction = window.innerWidth <= 1023 ? "vertical" : "horizontal";
+  let direction = window.innerWidth <= 1024 ? "vertical" : "horizontal";
 
   return direction;
-}
-
-function getSpaceBetween() {
-  let spacebetween = window.innerWidth <= 1023 ? 32 : 60;
-
-  return spacebetween;
 }
