@@ -182,7 +182,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 32px !important;
 }
 .skills__footer {
   margin-top: 60px;
@@ -196,6 +196,34 @@ html {
   display: flex;
   justify-content: flex-end;
   gap: 12px;
+}
+
+/* Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  background-image: none;
+  position: static;
+  top: 0%;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "" !important;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background-color: #333333;
+}
+.swiper-pagination-bullet-active {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid 7px;
+  background-color: #FFFFFF;
+}
+.swiper-pagination-bullets {
+  margin: 0 0;
 }
 
 /* Tablet breakpoint */
