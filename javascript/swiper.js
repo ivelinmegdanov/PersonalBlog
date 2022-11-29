@@ -1,4 +1,4 @@
-let swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper", {
   slidesPerView: 3,
   direction: getDirection(),
   spaceBetween: 32,
@@ -23,7 +23,5 @@ let swiper = new Swiper(".swiper", {
 });
 
 function getDirection() {
-  let direction = window.innerWidth <= 1024 ? "vertical" : "horizontal";
-
-  return direction;
+  return direction = window.innerWidth <= 1024 ? "vertical" : "horizontal";
 }
