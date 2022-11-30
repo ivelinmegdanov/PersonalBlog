@@ -3,6 +3,9 @@
   --gray-light: #D6D6D6;
   --font-primary: "Rubik", sans-serif;
   --font-secondary: "Ubuntu", sans-serif;
+  --mobile-slide-count: 3;
+  --mobile-slide-height: 410px;
+  --mobile-slide-gap: 32px;
 }
 
 /* GLOBAL */
@@ -265,13 +268,13 @@ html {
   .skills {
     margin-top: 200px;
   }
+  .skills__swiper {
+    height: calc(var(--mobile-slide-height) * var(--mobile-slide-count) + var(--mobile-slide-gap) * (var(--mobile-slide-count) - 1));
+  }
   .skill__box {
     overflow-wrap: break-word;
-    height: 410px !important;
+    height: var(--mobile-slide-height) !important;
     padding: 116px 40px;
-  }
-  .skills__boxes {
-    height: 1294px;
   }
   .skill__box__button {
     justify-content: flex-start;
