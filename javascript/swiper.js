@@ -1,6 +1,6 @@
 const swiper = new Swiper(".swiper", {
+  direction: 'vertical',
   slidesPerView: 3,
-  direction: getDirection(),
   spaceBetween: 32,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -13,15 +13,7 @@ const swiper = new Swiper(".swiper", {
   breakpoints: {
     1024: {
       spaceBetween: 60,
-    },
-  },
-  on: {
-    resize: function () {
-      swiper.changeDirection(getDirection());
+      direction: 'horizontal',
     },
   },
 });
-
-function getDirection() {
-  return direction = window.innerWidth <= 1024 ? "vertical" : "horizontal";
-}
