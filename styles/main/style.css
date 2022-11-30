@@ -225,6 +225,10 @@ html {
 .swiper-pagination-bullets {
   margin: 0 0;
 }
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical>.swiper-pagination-bullets {
+  transform: translate3d(0, 0, 0);
+}
 
 /* Tablet breakpoint */
 @media (max-width: 1024px) {
