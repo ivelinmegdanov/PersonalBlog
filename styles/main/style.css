@@ -233,6 +233,58 @@ html {
   transform: translate3d(0, 0, 0);
 }
 
+/* Portfolio section */
+.portfolio {
+  margin-top: 284px;
+  text-align: center;
+}
+.portfolio__title {
+  font-size: 54px;
+}
+.portfolio__btns {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.portfolio__btn {
+  background-color: transparent;
+  font-size: 18px;
+}
+.btn__active {
+  font-weight: 600;
+}
+.portfolio__btn::after {
+  padding: 0px 24px;
+  font-weight: 400;
+  content: "-";
+}
+.portfolio__btn:last-child:after {
+  content: "";
+}
+.portfolio__boxes__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px !important;
+}
+.portfolio__swiper{
+  margin-top: 60px;
+}
+.portfolio__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.portfolio__img {
+  height: 100% !important;
+  width: 100% !important;
+}
+.portfolio__footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Tablet breakpoint */
 @media (max-width: 1024px) {
   /* HERO SECTION */
