@@ -2,21 +2,28 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./style.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/main/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" >
+    <link rel="stylesheet" href="./styles/main/style.css">
 
+    <!-- Title -->
     <title>Ozart</title>
 </head>
 
 <body>
     <div class="body">
+        <!-- Navbar -->
         <header class="header container">
             <img class="header__logo" src="./images/Header/Logo.svg" alt="Website logo" />
             <img class="header__search" src="./images/Header/icons/search.svg" alt="Search icon" />
@@ -26,6 +33,7 @@
             </div>
         </header>
 
+        <!-- Hero section -->
         <div class="hero container">
             <div class="hero__content">
                 <div class="hero__text">
@@ -37,9 +45,9 @@
 
                 <div class="hero__image">
                     <picture>
-                        <source srcset="./images/Hero/profilePicture/ProfileDesktop.svg" media="(min-width: 1024px)">
-                        <source srcset="./images/Hero/profilePicture/ProfileTablet.svg" media="(min-width: 760px)">
-                        <img class="avatar" src="./images/Hero/profilePicture/ProfileMobile.svg" alt="Profile Picture">
+                        <source srcset="./images/Hero/profilePicture/ProfileMobile.svg" media="(max-width: 760px)">
+                        <source srcset="./images/Hero/profilePicture/ProfileTablet.svg" media="(max-width: 1024px)">
+                        <img class="avatar" src="./images/Hero/profilePicture/ProfileDesktop.svg" alt="Profile Picture">
                     </picture>
                 </div>
             </div>
@@ -60,18 +68,80 @@
             </div>
         </div>
 
+        <!-- About-me section -->
         <section class="aboutme crate">
             <h2 class="aboutme__title">Learn all about me in 60 seconds.</h2>
 
             <div class="aboutme__video">
                 <picture>
-                    <source srcset="./images/Aboutme/VideoPosterDesktop.svg" media="(min-width: 1024px)">
-                    <source srcset="./images/Aboutme/VideoPosterTablet.svg" media="(min-width: 760px)">
-                    <img class="video__poster" src="./images/Aboutme/VideoPosterMobile.svg" alt="Video">
+                    <source srcset="./images/Aboutme/VideoPosterMobile.svg" media="(max-width: 760px)">
+                    <source srcset="./images/Aboutme/VideoPosterTablet.svg" media="(max-width: 1024px)">
+                    <img class="video__poster" src="./images/Aboutme/VideoPosterDesktop.svg" alt="Video">
                 </picture>
+            </div>
+        </section>
+
+        <!-- Skills section -->
+        <section class="skills crate">
+            <h2 class="skills__title">What I Do</h1>
+            <div class="swiper skills__swiper">
+                <div class="swiper-wrapper skills__boxes">
+                    <div class="swiper-slide skill__box box__dark">
+                        <h2 class="skill__box__title">Ui & UX Design</h2>
+                        <p class="skill__box__desc">User interface design, user experience design, user research.</p>
+                        <div class="skill__box__button">
+                            <p class="skill__box__read">Read more</p>
+                            <img src="images/Skills/icons/arrow-white.svg" alt="Arrow"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide skill__box box__light">
+                        <h2 class="skill__box__title">Graphic Design</h2>
+                        <p class="skill__box__desc">User interface design, user experience design, user research.</p>
+                        <div class="skill__box__button">
+                            <p class="skill__box__read">Read more</p>
+                            <img src="images/Skills/icons/arrow-gray.svg" alt="Arrow"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide skill__box box__light">
+                        <h2 class="skill__box__title">Web Development</h2>
+                        <p class="skill__box__desc">User interface design, user experience design, user research.</p>
+                        <div class="skill__box__button">
+                            <p class="skill__box__read">Read more</p>
+                            <img src="images/Skills/icons/arrow-gray.svg" alt="Arrow"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide skill__box box__light">
+                        <h2 class="skill__box__title">Something Important</h2>
+                        <p class="skill__box__desc">User interface design, user experience design, user research.</p>
+                        <div class="skill__box__button">
+                            <p class="skill__box__read">Read more</p>
+                            <img src="images/Skills/icons/arrow-gray.svg" alt="Arrow"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide skill__box box__dark">
+                        <h2 class="skill__box__title">Lorem Loading..</h2>
+                        <p class="skill__box__desc">User interface design, user experience design, user research.</p>
+                        <div class="skill__box__button">
+                            <p class="skill__box__read">Read more</p>
+                            <img src="images/Skills/icons/arrow-white.svg" alt="Arrow"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills__footer">
+                <div class="filler"></div>
+                <div class="skill__boxes__pagination"></div>
+                <div class="arrows">
+                    <img class="swiper-button-prev" src="./images/Skills/icons/arrow-left.svg" alt="Previous"/>
+                    <img class="swiper-button-next" src="./images/Skills/icons/arrow-right.svg" alt="Next"/>
+                </div>
             </div>
         </section>
     </div>
 </body>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./javascript/swiper.js"></script>
 
 </html>
