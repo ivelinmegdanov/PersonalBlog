@@ -247,6 +247,7 @@ html {
   justify-content: center;
 }
 .portfolio__btn {
+  cursor: pointer;
   background-color: transparent;
   font-size: 18px;
 }
@@ -257,6 +258,7 @@ html {
   padding: 0px 24px;
   font-weight: 400;
   content: "-";
+  cursor: auto;
 }
 .portfolio__btn:last-child:after {
   content: "";
@@ -274,6 +276,12 @@ html {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+.portfolio__box {
+  visibility: hidden;
+}
+.portfolio__show {
+  visibility: visible;
 }
 .portfolio__img {
   height: 100% !important;
