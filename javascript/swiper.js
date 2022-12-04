@@ -21,6 +21,7 @@ const skillsSwiper = new Swiper(".skills__swiper", {
 const portfolioSwiper = new Swiper(".portfolio__swiper", {
   slidesPerView: 3,
   spaceBetween: 32,
+  direction: 'vertical',
   navigation: {
     nextEl: ".swiper-button-next.portfolio-button",
     prevEl: ".swiper-button-prev.portfolio-button",
@@ -28,5 +29,10 @@ const portfolioSwiper = new Swiper(".portfolio__swiper", {
   pagination: {
     el: ".portfolio__boxes__pagination",
     clickable: true,
+  },
+  breakpoints: {
+    1024: {
+      direction: 'horizontal',
+    },
   },
 });
