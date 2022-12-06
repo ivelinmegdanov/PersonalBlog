@@ -10,6 +10,7 @@ function filterSelection(section) {
       currentElement.classList.remove("portfolio__show");
     }
   }
+  portfolioSwiper.update();
 }
 
 const btnContainer = document.getElementsByClassName("portfolio__btns");
