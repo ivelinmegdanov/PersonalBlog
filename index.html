@@ -132,8 +132,93 @@
                 <div class="filler"></div>
                 <div class="skill__boxes__pagination"></div>
                 <div class="arrows">
-                    <img class="swiper-button-prev" src="./images/Skills/icons/arrow-left.svg" alt="Previous"/>
-                    <img class="swiper-button-next" src="./images/Skills/icons/arrow-right.svg" alt="Next"/>
+                    <img class="swiper-button-prev" src="./images/Swiper/arrow-left.svg" alt="Previous"/>
+                    <img class="swiper-button-next" src="./images/Swiper/arrow-right.svg" alt="Next"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio section -->
+        <section class="portfolio container">
+            <h2 class="portfolio__title">Portfolio</h2>
+            <div class="portfolio__btns">
+                <button class="portfolio__btn btn__active" onclick="filterSelection('')">All</button>
+                <button class="portfolio__btn" onclick="filterSelection('uiux')">UI & UX</button>
+                <button class="portfolio__btn" onclick="filterSelection('graphicdesign')">Graphic Design</button>
+                <button class="portfolio__btn" onclick="filterSelection('webdevelopment')">Web Development</button>
+            </div>
+            <div class="swiper portfolio__swiper">
+                <div class="swiper-wrapper portfolio__boxes">
+                    <div class="swiper-slide portfolio__box uiux portfolio__show">
+                        <div class="portfolio__stack">
+                            <picture>
+                                <source srcset="./images/Portfolio/Tablet/purple-women.svg" media="(max-width: 1024px)">
+                                <img class="portfolio__img" src="./images/Portfolio/Desktop/purple-women.svg" alt="Portfolio Image">
+                            </picture>
+                            <picture>
+                                <source srcset="./images/Portfolio/Tablet/boxed-water.svg" media="(max-width: 1024px)">
+                                <img class="portfolio__img" src="./images/Portfolio/Desktop/boxed-water.svg" alt="Portfolio Image">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="swiper-slide portfolio__box graphicdesign portfolio__show">
+                        <div class="portfolio__stack">
+                            <picture>
+                                <source srcset="./images/Portfolio/Tablet/creative.svg" media="(max-width: 1024px)">
+                                <source srcset="./images/Portfolio/Mobile/creative.svg" media="(max-width: 760px)">
+                                <img class="portfolio__img" src="./images/Portfolio/Desktop/creative.svg" alt="Portfolio Image">
+                            </picture>
+                            <picture>
+                                <source srcset="./images/Portfolio/Tablet/writing.svg" media="(max-width: 1024px)">
+                                <img class="portfolio__img" src="./images/Portfolio/Desktop/draw.svg" alt="Portfolio Image">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="swiper-slide portfolio__box webdevelopment portfolio__show">
+                        <div class="portfolio__stack">
+                            <picture>
+                                <source srcset="./images/Portfolio/Tablet/code.svg" media="(max-width: 1024px)">
+                                <img class="portfolio__img" src="./images/Portfolio/Desktop/code.svg" alt="Portfolio Image">
+                            </picture>
+                            <picture>
+                                <source srcset="./images/Portfolio/Tablet/design.svg" media="(max-width: 1024px)">
+                                <img class="portfolio__img" src="./images/Portfolio/Desktop/change-by-design.svg" alt="Portfolio Image">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="swiper-slide portfolio__box uiux portfolio__show">
+                        <div class="portfolio__stack">
+                            <picture>
+                                <source srcset="./images/Portfolio/Tablet/purple-women.svg" media="(max-width: 1024px)">
+                                <img class="portfolio__img" src="./images/Portfolio/Desktop/purple-women.svg" alt="Portfolio Image">
+                            </picture>
+                            <picture>
+                                <source srcset="./images/Portfolio/Tablet/boxed-water.svg" media="(max-width: 1024px)">
+                                <img class="portfolio__img" src="./images/Portfolio/Desktop/boxed-water.svg" alt="Portfolio Image">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="swiper-slide portfolio__box graphicdesign portfolio__show">
+                        <div class="portfolio__stack">
+                            <picture>
+                                <source srcset="./images/Portfolio/Tablet/creative.svg" media="(max-width: 1024px)">
+                                <source srcset="./images/Portfolio/Mobile/creative.svg" media="(max-width: 760px)">
+                                <img class="portfolio__img" src="./images/Portfolio/Desktop/creative.svg" alt="Portfolio Image">
+                            </picture>
+                            <picture>
+                                <source srcset="./images/Portfolio/Tablet/writing.svg" media="(max-width: 1024px)">
+                                <img class="portfolio__img" src="./images/Portfolio/Desktop/draw.svg" alt="Portfolio Image">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__footer">
+                <div class="filler"></div>
+                <div class="portfolio__boxes__pagination"></div>
+                <div class="arrows">
+                    <img class="swiper-button-prev portfolio-button" src="./images/Swiper/arrow-left.svg" alt="Previous"/>
+                    <img class="swiper-button-next portfolio-button" src="./images/Swiper/arrow-right.svg" alt="Next"/>
                 </div>
             </div>
         </section>
@@ -143,5 +228,6 @@
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./javascript/swiper.js"></script>
+<script src="./javascript/filter.js"></script>
 
 </html>

@@ -3,9 +3,18 @@
   --gray-light: #D6D6D6;
   --font-primary: "Rubik", sans-serif;
   --font-secondary: "Ubuntu", sans-serif;
-  --mobile-slide-count: 3;
-  --mobile-slide-height: 410px;
-  --mobile-slide-gap: 32px;
+
+  /* Skills Swiper*/
+  --skills-mobile-slide-count: 3;
+  --skills-mobile-slide-height: 410px;
+  --skills-mobile-slide-gap: 32px;
+
+  /* Portfolio Swiper*/
+  --portfolio-slide-gap: 32px;
+  --portfolio-slide-count: 6;
+
+  --portfolio-tablet-slide-height: 520px;
+  --portfolio-mobile-slide-height: 200px;
 }
 
 /* GLOBAL */
@@ -233,9 +242,70 @@ html {
   transform: translate3d(0, 0, 0);
 }
 
+/* Portfolio section */
+.portfolio {
+  margin-top: 284px;
+  text-align: center;
+}
+.portfolio__title {
+  font-size: 54px;
+}
+.portfolio__btns {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.portfolio__btn {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 18px;
+}
+.btn__active {
+  font-weight: 600;
+}
+.portfolio__btn::after {
+  padding: 0px 24px;
+  font-weight: 400;
+  content: "-";
+  cursor: auto;
+}
+.portfolio__btn:last-child:after {
+  content: "";
+}
+.portfolio__boxes__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px !important;
+}
+.portfolio__swiper{
+  margin-top: 60px;
+}
+.portfolio__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+.portfolio__box {
+  display: none;
+}
+.portfolio__show {
+  display: block !important;
+}
+.portfolio__img {
+  height: 100% !important;
+  width: 100% !important;
+}
+.portfolio__footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Tablet breakpoint */
 @media (max-width: 1024px) {
-  /* HERO SECTION */
+  /* Hero Section */
   .hero {
     margin-top: 100px;
   }
@@ -259,26 +329,42 @@ html {
     display: none;
   }
 
-  /* ABOUTME SECTION */
+  /* About-me section */
   .aboutme {
     margin-top: 200px;
   }
 
-  /* SKILLS SECTION */
+  /* Skills section */
   .skills {
     margin-top: 200px;
   }
   .skills__swiper {
-    height: calc(var(--mobile-slide-height) * var(--mobile-slide-count) + var(--mobile-slide-gap) * (var(--mobile-slide-count) - 1));
+    height: calc(var(--skills-mobile-slide-height) * var(--skills-mobile-slide-count) + var(--skills-mobile-slide-gap) * (var(--skills-mobile-slide-count) - 1));
   }
   .skill__box {
     overflow-wrap: break-word;
-    height: var(--mobile-slide-height) !important;
+    height: var(--skills-mobile-slide-height) !important;
     padding: 116px 40px;
   }
   .skill__box__button {
     justify-content: flex-start;
     gap: 24px;
+  }
+
+  /* Portfolio section */
+  .portfolio {
+    margin-top: 200px;
+  }
+  .portfolio__img {
+    height: var(--portfolio-tablet-slide-height) !important;
+    min-width: 728px !important;
+    display: flex;
+  }
+  .portfolio__box {
+    height: calc((var(--portfolio-tablet-slide-height) * 2) + var(--portfolio-slide-gap)) !important;
+  }
+  .portfolio__boxes{
+    height: calc(var(--portfolio-tablet-slide-height) * var(--portfolio-slide-count) + var(--portfolio-slide-gap) * (var(--portfolio-slide-count) - 1)) !important;
   }
 }
 
@@ -345,5 +431,43 @@ html {
   }
   .arrows {
     display: none;
+  }
+
+  /* Portfolio section */
+  .portfolio {
+    margin-top: 160px;
+  }
+  .portfolio__title {
+    font-size: 40px;
+  }
+  .portfolio__btns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .portfolio__btn {
+    font-size: 14px;
+  }
+  .portfolio__btn::after {
+    padding: 0px 0px;
+    content: "";
+  }
+  .portfolio__btn::before {
+    padding-right: 22px;
+    font-weight: 400;
+    content: "-";
+    cursor: auto;
+  }
+  .portfolio__footer {
+    justify-content: center;
+}
+  .portfolio__img {
+    height: var(--portfolio-mobile-slide-height) !important;
+  }
+  .portfolio__box {
+    height: calc((var(--portfolio-mobile-slide-height) * 2) + var(--portfolio-slide-gap)) !important;
+  }
+  .portfolio__boxes{
+    height: calc(var(--portfolio-mobile-slide-height) * var(--portfolio-slide-count) + var(--portfolio-slide-gap) * (var(--portfolio-slide-count) - 1)) !important;
   }
 }
