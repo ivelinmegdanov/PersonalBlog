@@ -17,7 +17,7 @@ const btnContainer = document.getElementsByClassName("portfolio__btns");
 const btns = btnContainer[0].getElementsByClassName("portfolio__btn");
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
-    let activeButton = document.getElementsByClassName("btn__active");
+    const activeButton = document.getElementsByClassName("btn__active");
     activeButton[0].classList.remove("btn__active");
     this.classList.add("btn__active");
   });
