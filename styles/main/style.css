@@ -303,6 +303,60 @@ html {
   justify-content: space-between;
 }
 
+/* Testimonial section */
+.testimonial {
+  margin-top: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial__title {
+  font-size: 54px;
+  font-weight: 500;
+}
+.testimonial__swiper {
+  margin-top: 100px;
+  width: 100%;
+}
+.testimonial__content {
+  display: flex;
+  gap: 100px;
+}
+.testimonial__comment {
+  font-size: 40px;
+}
+.testimonial__text {
+  display: flex;
+  flex-direction: column;
+  gap: 95px;
+}
+.testimonial__name {
+  font-size: 28px;
+  font-weight: 500;
+}
+.testimonial__desc {
+  font-size: 20px;
+  margin-top: 12px;
+}
+.testimonial__buttons {
+  display: flex;
+}
+.testimonial__boxes__pagination {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.testimonial__quatation.right {
+  float: right;
+}
+
+/* Fix breakpoint */
+@media (max-width: 1160px) {
+  .testimonial__comment {
+    font-size: 32px;
+  }
+}
+
 /* Tablet breakpoint */
 @media (max-width: 1024px) {
   /* Hero Section */
@@ -365,6 +419,22 @@ html {
   }
   .portfolio__boxes{
     height: calc(var(--portfolio-tablet-slide-height) * var(--portfolio-slide-count) + var(--portfolio-slide-gap) * (var(--portfolio-slide-count) - 1)) !important;
+  }
+
+  /* Testimobial section */
+  .testimonial {
+    margin-top: 200px;
+  }
+  .testimonial__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .testimonial__arrows {
+    display: none;
+  }
+  .testimonial__boxes__pagination {
+    justify-content: center;
   }
 }
 
@@ -460,7 +530,7 @@ html {
   }
   .portfolio__footer {
     justify-content: center;
-}
+  }
   .portfolio__img {
     height: var(--portfolio-mobile-slide-height) !important;
   }
@@ -469,5 +539,20 @@ html {
   }
   .portfolio__boxes{
     height: calc(var(--portfolio-mobile-slide-height) * var(--portfolio-slide-count) + var(--portfolio-slide-gap) * (var(--portfolio-slide-count) - 1)) !important;
+  }
+
+  /* Testimonial section */
+  .testimonial {
+    margin-top: 160px;
+  }
+  .testimonial__title {
+    font-size: 40px;
+  }
+  .testimonial__comment {
+    font-size: 18px;
+  }
+  .testimonial__img {
+    width: 100%;
+    height: 100%;
   }
 }

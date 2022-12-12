@@ -36,3 +36,15 @@ const portfolioSwiper = new Swiper(".portfolio__swiper", {
     },
   },
 });
+
+const testimonialSwiper = new Swiper(".testimonial__swiper", {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-button-next.testimonial-button",
+    prevEl: ".swiper-button-prev.testimonial-button",
+  },
+  pagination: {
+    el: ".testimonial__boxes__pagination",
+    clickable: true,
+  },
+});
