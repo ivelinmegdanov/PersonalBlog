@@ -325,7 +325,7 @@ html {
 .testimonial__comment {
   font-size: 40px;
 }
-.testimonial__text {
+.testimonial__body {
   display: flex;
   flex-direction: column;
   gap: 95px;
