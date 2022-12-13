@@ -330,11 +330,11 @@ html {
   flex-direction: column;
   gap: 95px;
 }
-.testimonial__name {
+.testimonial__author__name {
   font-size: 28px;
   font-weight: 500;
 }
-.testimonial__desc {
+.testimonial__author__desc {
   font-size: 20px;
   margin-top: 12px;
 }
