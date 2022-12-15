@@ -39,6 +39,7 @@ const portfolioSwiper = new Swiper(".portfolio__swiper", {
 
 const testimonialSwiper = new Swiper(".testimonial__swiper", {
   slidesPerView: 1,
+  spaceBetween: 50,
   navigation: {
     nextEl: ".swiper-button-next.testimonial-button",
     prevEl: ".swiper-button-prev.testimonial-button",
