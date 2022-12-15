@@ -39,6 +39,7 @@ const portfolioSwiper = new Swiper(".portfolio__swiper", {
 
 const testimonialSwiper = new Swiper(".testimonial__swiper", {
   slidesPerView: 1,
+  slidesPerGroup: 1,
   spaceBetween: 50,
   navigation: {
     nextEl: ".swiper-button-next.testimonial-button",
@@ -48,4 +49,17 @@ const testimonialSwiper = new Swiper(".testimonial__swiper", {
     el: ".testimonial__boxes__pagination",
     clickable: true,
   },
+});
+
+testimonialSwiper.on('slideChange', function() {
+  const nextButtons = document.getElementsByClassName('testimonial-button');
+  console.log(nextButtons);
+  for (let i = 0; i < nextButtons.length; i++) {
+    const currentElement = nextButtons[i];
+    if(i === 0 || i === 7){
+      currentElement.classList.add("swiper-button-disabled");
+    }else{
+      currentElement.classList.remove("swiper-button-disabled");
+    }
+  };
 });
