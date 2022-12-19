@@ -350,6 +350,37 @@ html {
   float: right;
 }
 
+/* Contacts section */
+.contacts {
+  background-color: #363434;
+  margin-top: 140px;
+  text-align: center;
+  padding: 100px 20px;
+}
+.contacts__label {
+  font-size: 32px;
+  color: white;
+}
+.contacts__title {
+  color: white;
+  font-size: 54px;
+  font-weight: 400;
+  margin-top: 24px;
+}
+.contacts__button {
+  margin-top: 80px;
+  font-size: 28px;
+  color: #363434;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+.contacts__links {
+  margin-top: 80px;
+  display: flex;
+  gap: 140px;
+  justify-content: center;
+}
+
 /* Fix breakpoint */
 @media (max-width: 1160px) {
   .testimonial__comment {
