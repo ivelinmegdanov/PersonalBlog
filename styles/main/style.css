@@ -1,6 +1,8 @@
 :root {
   --gray-dark: #333333;
   --gray-light: #D6D6D6;
+  --contacts-dark-gray: #363434;
+  --contacts-light-gray: #3A3A3A;
   --font-primary: "Rubik", sans-serif;
   --font-secondary: "Ubuntu", sans-serif;
 
@@ -352,7 +354,7 @@ html {
 
 /* Contacts section */
 .contacts {
-  background-color: #363434;
+  background-color: var(--contacts-dark-gray);
   margin-top: 140px;
   text-align: center;
   padding: 100px 0px;
@@ -368,7 +370,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #3A3A3A;
+  color: var(--contacts-light-gray);
   font-size: 30vw;
   letter-spacing: 0.13em;
   text-align: center;
@@ -387,7 +389,7 @@ html {
 .contacts__button {
   margin-top: 80px;
   font-size: 28px;
-  color: #363434;
+  color: var(--contacts-dark-gray);
   padding: 20px 40px;
   cursor: pointer;
 }
