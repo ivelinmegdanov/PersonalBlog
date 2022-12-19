@@ -53,10 +53,9 @@ const testimonialSwiper = new Swiper(".testimonial__swiper", {
 
 testimonialSwiper.on('slideChange', function() {
   const nextButtons = document.getElementsByClassName('testimonial-button');
-  console.log(nextButtons);
   for (let i = 0; i < nextButtons.length; i++) {
     const currentElement = nextButtons[i];
-    if(i === 0 || i === 7){
+    if(i === 0 || i === (nextButtons.length - 1)){
       currentElement.classList.add("swiper-button-disabled");
     }else{
       currentElement.classList.remove("swiper-button-disabled");
