@@ -630,7 +630,7 @@ html {
   .contacts__links {
     gap: 40px;
   }
-  .contacts__link {
+  .contacts__icon {
     width: 24px;
     height: 24px;
   }
