@@ -375,6 +375,7 @@ html {
   letter-spacing: 0.13em;
   text-align: center;
   z-index: -1;
+  width: 100vw;
 }
 .contacts__label {
   font-size: 32px;
