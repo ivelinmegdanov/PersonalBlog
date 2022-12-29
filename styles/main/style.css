@@ -371,11 +371,12 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--contacts-light-gray);
-  font-size: 30vw;
+  font-size: 550px;
   letter-spacing: 0.13em;
   text-align: center;
   z-index: -1;
-  width: 100vw;
+  overflow: hidden;
+  line-height: 550px;
 }
 .contacts__label {
   font-size: 32px;
@@ -401,10 +402,20 @@ html {
   justify-content: center;
 }
 
-/* Fix breakpoint */
+/* Fix breakpoints */
 @media (max-width: 1160px) {
   .testimonial__comment {
     font-size: 32px;
+  }
+}
+@media (max-width: 1650px) {
+  .contacts__box:before {
+    font-size: 320px;
+  }
+}
+@media (max-width: 800px) {
+  .contacts__box:before {
+    font-size: 200px;
   }
 }
 
@@ -493,7 +504,7 @@ html {
     margin-top: 100px;
   }
   .contacts__box:before{
-    font-size: 33.5vw;
+    font-size: 260px;
   }
   .contacts__links {
     gap: 100px;
