@@ -376,7 +376,8 @@ html {
   text-align: center;
   z-index: -1;
   overflow: hidden;
-  line-height: 550px;
+  max-width: 100%;
+  line-height: 1;
 }
 .contacts__label {
   font-size: 32px;
