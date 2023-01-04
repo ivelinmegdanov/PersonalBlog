@@ -446,16 +446,27 @@ html {
 
 /* Fix breakpoints */
 @media (max-width: 1160px) {
+  /* Testimonial section */
   .testimonial__comment {
     font-size: 32px;
   }
 }
 @media (max-width: 1650px) {
+  /* Contacts section */
   .contacts__box:before {
     font-size: 320px;
   }
+
+  /* Achievements section */
+  .achievements__box:before {
+    font-size: 177px;
+  }
+  .achievements__box {
+    gap: 80px;
+  }
 }
 @media (max-width: 800px) {
+   /* Contacts section */
   .contacts__box:before {
     font-size: 200px;
   }
@@ -550,6 +561,21 @@ html {
   }
   .contacts__links {
     gap: 100px;
+  }
+
+  /* Achievements section */
+  .achievements {
+    padding: 100px 0px;
+  }
+  .achievements__box {
+    gap: 0px;
+    justify-content: space-around;
+  }
+  .achievement__title {
+    font-size: 40px;
+  }
+  .achievement__desc {
+    font-size: 18px;
   }
 }
 
@@ -687,5 +713,17 @@ html {
   .contacts__icon {
     width: 24px;
     height: 24px;
+  }
+
+  /* Achievements section */
+  .achievements {
+    padding: 80px 0px;
+  }
+  .achievements__box {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .achievements__box:before {
+    display: none;
   }
 }
