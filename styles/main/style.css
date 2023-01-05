@@ -365,20 +365,22 @@ html {
 .contacts__box{
   position: relative;
 }
-.contacts__box:before{
-  content: "Hello";
+.background__text:before{
   position: absolute;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--contacts-light-gray);
-  font-size: 550px;
   letter-spacing: 0.13em;
   text-align: center;
   z-index: -1;
-  overflow: hidden;
   max-width: 100%;
   line-height: 1;
+}
+.contacts__box:before{
+  content: "Hello";
+  top: 50%;
+  color: var(--contacts-light-gray);
+  font-size: 550px;
+  overflow: hidden;
 }
 .contacts__label {
   font-size: 32px;
@@ -417,17 +419,9 @@ html {
 }
 .achievements__box:before {
   content: "Project";
-  position: absolute;
   top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: var(--achievements-background-gray);
   font-size: 300px;
-  letter-spacing: 0.13em;
-  text-align: center;
-  z-index: -1;
-  max-width: 100%;
-  line-height: 1;
 }
 .achievement {
   display: flex;
