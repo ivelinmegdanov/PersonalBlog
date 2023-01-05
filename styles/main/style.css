@@ -430,7 +430,7 @@ html {
   max-width: 100%;
   line-height: 1;
 }
-.achievement__holder {
+.achievement {
   display: flex;
   flex-direction: column;
   align-items: center;
