@@ -414,7 +414,6 @@ html {
   position: relative;
   display: flex;
   justify-content: center;
-  gap: 160px;
 }
 .achievements__box:before {
   content: "Project";
@@ -435,6 +434,8 @@ html {
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  width: 100%;
+  max-width: 330px;
 }
 .achievement__title {
   font-size: 64px;
@@ -454,15 +455,24 @@ html {
 @media (max-width: 1650px) {
   /* Contacts section */
   .contacts__box:before {
+    font-size: 420px;
+  }
+}
+@media (max-width: 1280px) {
+  /* Contacts section */
+  .contacts__box:before {
     font-size: 320px;
   }
 
   /* Achievements section */
   .achievements__box:before {
-    font-size: 177px;
+    font-size: 220px;
   }
-  .achievements__box {
-    gap: 80px;
+}
+@media (max-width: 950px) {
+  /* Achievements section */
+  .achievements__box:before {
+    font-size: 177px;
   }
 }
 @media (max-width: 800px) {
@@ -566,10 +576,6 @@ html {
   /* Achievements section */
   .achievements {
     padding: 100px 0px;
-  }
-  .achievements__box {
-    gap: 0px;
-    justify-content: space-around;
   }
   .achievement__title {
     font-size: 40px;
@@ -721,6 +727,7 @@ html {
   }
   .achievements__box {
     flex-direction: column;
+    align-items: center;
     gap: 40px;
   }
   .achievements__box:before {
