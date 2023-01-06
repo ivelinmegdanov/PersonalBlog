@@ -1,6 +1,7 @@
 :root {
   --gray-dark: #333333;
   --gray-light: #D6D6D6;
+  --color-white: #FFFFFF;
   --contacts-dark-gray: #363434;
   --contacts-light-gray: #3A3A3A;
   --font-primary: "Rubik", sans-serif;
@@ -17,6 +18,12 @@
 
   --portfolio-tablet-slide-height: 520px;
   --portfolio-mobile-slide-height: 200px;
+
+  /* Blogs Swiper */
+  --blog-tablet-slide-height: 563px;
+  --blog-mobile-slide-height: 583px;
+  --blog-slide-count: 3;
+  --blog-tablet-slide-gap: 32px;
 }
 
 /* GLOBAL */
@@ -403,6 +410,66 @@ html {
   justify-content: center;
 }
 
+/* Blogs section */
+.blogs {
+  margin-top: 140px;
+}
+.blogs__title {
+  text-align: center;
+  font-size: 54px;
+  font-weight: 500;
+}
+.blogs__swiper {
+  margin-top: 60px;
+}
+.blog__box {
+  background-color: var(--gray-dark);
+}
+.blog__image {
+  width: 100%;
+}
+.blog__content {
+  padding: 20px;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+}
+.blog__interactions {
+  font-size: 14px;
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+}
+.interaction__text {
+  cursor: pointer;
+}
+.blog__title {
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: 400;
+}
+.blog__more {
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.blog__readmore {
+  cursor: pointer;
+}
+.blogs__footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogs__pagination {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: center;
+}
+
 /* Fix breakpoints */
 @media (max-width: 1160px) {
   .testimonial__comment {
@@ -509,6 +576,22 @@ html {
   }
   .contacts__links {
     gap: 100px;
+  }
+
+  /* Blogs section */
+  .blogs {
+    margin-top: 100px;
+  }
+  .blogs__swiper {
+    height: calc(var(--blog-tablet-slide-height) * var(--blog-slide-count) + var(--blog-tablet-slide-gap) * (var(--blog-slide-count) - 1)) !important;
+  }
+  .blog__image {
+    height: 337px;
+    object-fit: cover;
+  }
+  .blog__more {
+    justify-content: flex-start;
+    gap: 24px;
   }
 }
 
@@ -646,5 +729,22 @@ html {
   .contacts__icon {
     width: 24px;
     height: 24px;
+  }
+
+  /* Blogs section */
+  .blogs {
+    margin-top: 80px;
+  }
+  .blogs__title {
+    font-size: 40px;
+  }
+  .blogs__swiper {
+    height: calc(var(--blog-mobile-slide-height) * var(--blog-slide-count) + var(--blog-tablet-slide-gap) * (var(--blog-slide-count) - 1)) !important;
+  }
+  .blog__title {
+    font-size: 20px;
+  }
+  .blogs__footer {
+    justify-content: center;
   }
 }
