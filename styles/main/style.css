@@ -428,6 +428,12 @@ html {
 .blog__image {
   width: 100%;
 }
+.blog__date {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+}
 .blog__content {
   padding: 20px;
   display: flex;
