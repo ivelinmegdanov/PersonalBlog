@@ -489,6 +489,9 @@ html {
   justify-content: space-between;
   padding: 30px 20px;
 }
+.footer__copyright {
+  font-size: 14px;
+}
 .footer__links {
   display: flex;
   gap: 80px;
