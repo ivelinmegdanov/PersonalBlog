@@ -51,16 +51,16 @@ const testimonialSwiper = new Swiper(".testimonial__swiper", {
   },
 });
 
-const blogsSwiper = new Swiper(".blogs__swiper", {
+const blogSwiper = new Swiper(".blog__swiper", {
   direction: 'vertical',
   slidesPerView: 3,
   spaceBetween: 32,
   navigation: {
-    nextEl: ".blogs-button-next",
-    prevEl: ".blogs-button-prev",
+    nextEl: ".blog-button-next",
+    prevEl: ".blog-button-prev",
   },
   pagination: {
-    el: ".blogs__pagination",
+    el: ".blog__pagination",
     clickable: true,
   },
   breakpoints: {
