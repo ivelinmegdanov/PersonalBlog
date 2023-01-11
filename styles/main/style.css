@@ -423,10 +423,10 @@ html {
   margin-top: 80px;
 }
 .footer__contact {
-  width: 120%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 120%;
 }
 .footer__contact__info {
   display: flex;
@@ -449,27 +449,27 @@ html {
 }
 .footer__form {
   display: flex;
-  width: 80%;
   flex-direction: column;
-  background-color: var(--gray-dark);
+  align-items: flex-end;
+  width: 80%;
   padding: 80px 60px;
   gap: 20px;
-  align-items: flex-end;
+  background-color: var(--gray-dark);
 }
 .footer__form__input__holder {
   display: flex;
-  gap: 60px;
-  width: 100%;
   flex-direction: column;
+  width: 100%;
+  gap: 60px;
 }
 .footer__form__input {
-  background-color: var(--gray-dark);
-  color: white;
-  font-size: 14px;
+  width: 100%;
   padding: 5px 0px;
   border-bottom: 1px solid white;
-  width: 100%;
+  font-size: 14px;
   resize: none;
+  color: white;
+  background-color: var(--gray-dark);
 }
 .footer__form__input::placeholder {
   color: #FFFFFF;
@@ -483,10 +483,10 @@ html {
   padding: 16px 40px;
 }
 .footer__bottom {
-  margin-top: 170px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 170px;
   padding: 30px 20px;
 }
 .footer__copyright {
