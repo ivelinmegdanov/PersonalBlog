@@ -433,6 +433,7 @@ html {
   top: 20px;
   right: 20px;
   font-size: 14px;
+  font-weight: 300;
 }
 .blog__content {
   padding: 20px;
