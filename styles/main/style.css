@@ -472,6 +472,7 @@ html {
   background-color: var(--gray-dark);
 }
 .footer__form__input::placeholder {
+  opacity: 1;
   color: #FFFFFF;
   font-size: 14px;
 }
