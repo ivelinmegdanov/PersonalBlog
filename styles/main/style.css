@@ -29,13 +29,31 @@ html {
   color: var(--gray-dark);
 }
 
-/* HEADER */
+/* Reusable styles*/
 .container {
   max-width: 1520px;
   width: 100%;
   padding: 0px 20px;
   margin: 0 auto;
 }
+.crate {
+  max-width: 1262px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+.background__text:before{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.13em;
+  text-align: center;
+  z-index: -1;
+  max-width: 100%;
+  line-height: 1;
+}
+
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
@@ -126,12 +144,6 @@ html {
 }
 
 /* ABOUTME SECTION */
-.crate {
-  max-width: 1262px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0px 20px;
-}
 .aboutme {
   display: flex;
   align-items: center;
@@ -364,16 +376,6 @@ html {
 }
 .contacts__box{
   position: relative;
-}
-.background__text:before{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 0.13em;
-  text-align: center;
-  z-index: -1;
-  max-width: 100%;
-  line-height: 1;
 }
 .contacts__box:before{
   content: "Hello";
