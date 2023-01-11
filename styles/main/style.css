@@ -446,9 +446,6 @@ html {
   display: flex;
   justify-content: space-between;
 }
-.interaction__text {
-  cursor: pointer;
-}
 .blog__title {
   color: var(--color-white);
   font-size: 24px;
